@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Prerit</title>
+      <link rel="stylesheet" href="main.css">
+        <style>
+          canvas {
+            display: block;
+            height: 100vh;
+            
+            margin-top: -50px;
+            
+             }
+             * {
+            /* disable on touch highlights of html elements, especially on mobile! */
+            -webkit-tap-highlight-color: transparent;
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+        
+        </style>
+        
+
+      </head>
+
+<body>
+    <header>
+    <div class="container">
+      <div class="subcontainer">
+        <nav class="navbar">
+          <a href="index.html" class="nav-branding">PRERIT JAIN</a>
+          <ul class="nav-menu">
+            <li class="nav-item">
+              <a href="#about" class="nav-link">ABOUT</a>
+            </li>
+            <li class="nav-item">
+              <a href="#projects" class="nav-link">PROJECTS</a>
+            </li>
+            <li class="nav-item">
+              <a href="" class="nav-link">BLOG</a>
+            </li>
+          </ul>
+          
+        </nav>
+      </div>
+    </div>
+  </header>
+
+
+<!--INSERT cables  canvas -->
+<section id="home">
+  <canvas id="glcanvas" width="100vw" height="100vh" tabindex="1">
+
+
+   </canvas>   
+    
+</section>
+
+
+  <!-- projects -->
+  <section id="projects">
+    <h1>PROJECTS</h1>
+    
+    <div class="image-gallery">
+      
+
+      <div class="image-box">
+        <img src="assets/playthings-01.jpg" />
+        <div class="overlay">
+          <div class="details">
+            <h3 class="title">
+              <a href="https://psynodent.tumblr.com/">Playthings</a>
+            </h3>
+            <span class="category">
+              <a href="https://psynodent.tumblr.com/">Quirky | Handcrafted</a>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="image-box">
+        <img src="assets/3d_modeling-01.jpg" />
+        <div class="overlay">
+          <div class="details">
+            <h3 class="title">
+              <a href="https://psynodent.artstation.com/">3D Modeling</a>
+            </h3>
+            <span class="category">
+              <a href="https://psynodent.artstation.com/">Asset | Prop Design</a>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="image-box">
+        <img src="assets/animation-01.jpg" />
+        <div class="overlay">
+          <div class="details">
+            <h3 class="title">
+              <a href="https://vimeo.com/psynodent">Animation</a>
+            </h3>
+            <span class="category">
+              <a href="https://vimeo.com/psynodent">Motion Graphic | film</a>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="image-box">
+        <img src="assets/interactive-01.jpg" alt="img.jpg" />
+        <div class="overlay">
+          <div class="details">
+            <h3 class="title">
+              <a href="https://psynodent.itch.io/">Interactive Play</a>
+            </h3>
+            <span class="category">
+              <a href="https://psynodent.itch.io/">Game | Storytelling</a>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="image-box">
+        <img src="assets/new_media-01.jpg" alt="img.jpg" />
+        <div class="overlay">
+          <div class="details">
+            <h3 class="title">
+              <a href="projects/new_media.html">New Media</a>
+            </h3>
+            <span class="category">
+              <a href="projects/new_media.html">AR | Sound Design</a>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="image-box">
+        <img src="assets/gamification-01.jpg" alt="img.jpg" />
+        <div class="overlay">
+          <div class="details">
+            <h3 class="title">
+              <a href="projects/gamification.html">Gamification</a>
+            </h3>
+            <span class="category">
+              <a href="projects/gamification.html">Pedagogy | System Design</a>
+            </span>
+          </div>
+        </div>
+      </div>
+    
+    
+  </section>
+
+<!-- about -->
+<section id="about">
+  
+    <div class="aboutme">
+      <h1>ABOUT</h1>
+      <div class="photo1"><img src="assets/dp1.jpg"></div>
+      <div class="photo2"><img src="assets/dp2-01.jpg"></div>
+      
+
+      
+      <div class="text">
+        <p>Prerit Jain is toy and game designer.
+          His practice revolves around playfulness and the role of emerging
+          technology as a medium for human connection with oneself and the environment.
+          He is interested in creating an altered audiovisual aesthetic developed from applying various 	techniques to ideas derived from fields range from digital culture, biology, pedagogy and 	childhood.
+          He works with mixed reality, AR, VR, Games, found materials, sound art, and 3d
+          artifacts. His work employs digital tools to manipulate and alter data obtain from his immediate physical and digital environment. He also likes to make crochet toys and collect kitschy objects memes.
+          </p>
+
+          <br>
+          <p> Contact, collaboration / freelance : preritjain4@gmail.com</p>
+
+
+      </div>
+  
+  </div>
+
+  </div>
+ 
+</section>
+
+<script type="text/javascript" src="js/patch.js" async></script>
+    
+
+    <script>
+
+        // disable rubberband effect on mobile devices
+        document.getElementById('glcanvas').addEventListener('touchmove', (e)=>{ e.preventDefault(); }, false);
+
+
+        function patchInitialized(patch) {
+            // You can now access the patch object (patch), register variable watchers and so on
+        }
+
+        function patchFinishedLoading(patch) {
+            // The patch is ready now, all assets have been loaded
+        }
+
+        document.addEventListener('CABLES.jsLoaded', function (event) {
+            CABLES.patch = new CABLES.Patch({
+                patch: CABLES.exportedPatch,
+                "prefixAssetPath": "",
+                "glCanvasId": "glcanvas",
+                "glCanvasResizeToWindow": true,
+                "onPatchLoaded": patchInitialized,
+                "onFinishedLoading": patchFinishedLoading,
+                "canvas":{"alpha":true,"premultipliedAlpha":true} // make canvas transparent
+            });
+        });
+    </script>
+
+</body>
+
+ 
+<footer>
+ 
+  <div class="icons">
+    <li><a href="https://twitter.com/preritjain4" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
+		<li><a href="https://psynodent.itch.io/" class="icon brands alt fa-facebook-f"><span class="label">Itch.io</span></a></li>
+		<li><a href="https://www.instagram.com/psynodent/" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+    <li><a href="https://psynodent.carrd.co/" class="icon brands alt fa-instagram"><span class="label">Store</span></a></li>
+  </div>
+  
+   
+</footer>
