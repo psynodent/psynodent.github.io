@@ -503,8 +503,9 @@ h1{
   .image-gallery {
     grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
     grid-auto-rows: 250px;
-    height: inherit;
-    overflow: hidden;
+    
+    
+    
   }
 
   .image-gallery .image-box:nth-child(7n + 1) {
